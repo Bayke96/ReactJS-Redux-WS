@@ -1,0 +1,291 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+a:active, a:focus {
+    outline: 0;
+    border: none;
+    color: white;
+    text-decoration: none;
+}
+
+button:active, button:focus {
+    outline: 0;
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background-color: darkred;
+    text-align: center;
+    height: 4em;
+}
+
+.header-button {
+    position: relative;
+    background-color: transparent;
+    border-style: none;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: central;
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.header-button:hover {
+    border-bottom-style: solid;
+    border-color: white;
+}
+
+.body-header {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.form-div {
+    text-align: center;
+    margin-top: 2em;
+}
+
+select {
+    margin-bottom: 1em;
+    width: 10em;
+}
+
+input[type="text"] {
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 1.1em;
+}
+
+textarea {
+    width: 20em;
+    height: 8em;
+}
+
+.form-buttons {
+    margin-top: 2em;
+}
+
+.form-buttons button {
+    background-color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkred;
+    color: darkred;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0.4em;
+    padding-bottom: 0.4em;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    margin-bottom: 1em;
+    transition-duration: 400ms;
+}
+
+.form-buttons button:hover {
+    color: white;
+    background-color: darkred;
+}
+
+#get-post-info-div {
+    margin-top: 1.2em;
+    text-align: center;
+}
+
+#get-post-info-div p {
+    font-size: 0.9em;
+}
+
+#get-post-info-div input[type="text"]{
+    font-size: 0.8em;
+}
+
+.post-info-container {
+    width: 97.5%;
+    border-style: solid;
+    border-width: 1px;
+    border-color: darkred;
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.post-info-container p {
+    margin: 0;
+}
+
+#post-info-mobile {
+    display: none;
+}
+
+.mobile-response-paragraph {
+    text-align: center;
+    font-size: 0.7em;
+    font-weight: bold;
+    color: darkred;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.mobile-post-body {
+    text-align: justify;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #5e636f;
+    font-size: 0.8em;
+}
+
+#post-info-desktop {
+    display: flex;
+    width: 97.5%;
+    padding: 0;
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-top: 2em;
+}
+
+#left-div-desktop {
+    width: 60%;
+    height: 100%;
+    padding-left: 3em;
+}
+
+#left-div-desktop p {
+    margin-top: 1.5em;
+    text-align: justify;
+    padding-left: 1.5em;
+    padding-right: 2em;
+    color: #5e636f;
+}
+
+#right-div-desktop {
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    padding-left: 5em;
+}
+
+.post-response {
+    padding-left: 1.2em;
+    text-align: justify;
+    color: darkred;
+    margin-right: 1.5em;
+}
+
+.delete-post-paragraph {
+    text-align: center;
+    color: darkred;
+}
+
+.delete-post-body {
+    text-align: center;
+    color: #5e636f;
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+@media (max-width: 640px) {
+
+    .header-button {
+        font-size: 0.9em;
+    }
+
+    .body-header {
+        font-size: 1.2em;
+    }
+
+    input[type="text"]{
+        font-size: 0.8em;
+    }
+
+    textarea {
+        width: 16em;
+        font-size: 0.8em;
+    }
+
+    .form-buttons {
+        margin-top: 0.5em;
+    }
+
+    .form-buttons button {
+        font-size: 0.7em;
+    }
+
+    #post-info-mobile {
+        display: inline;
+    }
+
+    #post-info-desktop {
+        display: none;
+    }
+
+    .post-info-container {
+        width: 95%;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .post-info-container p {
+        font-size: 0.8em
+    }
+
+    select {
+        font-size: 0.8em;
+    }
+
+    input[type="text"]{
+        font-size: 0.7em;
+    }
+
+    textarea {
+        font-size: 0.7em;
+    }
+
+    .delete-post-paragraph {
+        text-align: center;
+        color: darkred;
+        font-size: 0.8em;
+    }
+
+    .delete-post-body {
+        text-align: justify;
+        color: #5e636f;
+        font-size: 0.8em;
+        margin-bottom: 1.5em;
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .header-button {
+        margin-left: 1em;
+        margin-right: 1em;
+        font-size: 1.2em;
+        margin-top: 2em;
+    }
+
+    .header-button {
+        font-size: 1em;
+    }
+
+    .form-buttons button {
+        font-size: 0.9em;
+    }
+}
