@@ -25,8 +25,11 @@ export const getPostInfo = () => {
             .then(response => {
                 dispatch(readPost(response.data));
             })
-            .catch(error => {
-               
+            .catch(function (error) {
+                if (error.response.status === 500 || error.response.status === 404) {
+                    alert('This Post ID does not exist.');
+                    return false;
+                }
             });
     };
 };
@@ -77,8 +80,11 @@ export const createNewPost = () => {
                 resetButton.click();
                 dispatch(createPost());
             })
-            .catch(function (response) {
-
+            .catch(function (error) {
+                if (error.response.status === 500 || error.response.status === 404) {
+                    alert('This Post ID does not exist.');
+                    return false;
+                }
             });
     };
 };
@@ -136,9 +142,11 @@ export const updateExistingPost = () => {
                 resetButton.click();
                 dispatch(updatePost());
             })
-            .catch(function (response) {
-                //handle error
-
+            .catch(function (error) {
+                if (error.response.status === 500 || error.response.status === 404) {
+                    alert('This Post ID does not exist.');
+                    return false;
+                }
             });
     };
 };
@@ -166,9 +174,11 @@ export const deleteExistingPost = () => {
                 resetButton.click();
                 dispatch(deletePost());
             })
-            .catch(function (response) {
-                //handle error
-
+            .catch(function (error) {
+                if (error.response.status === 500 || error.response.status === 404) {
+                    alert('This Post ID does not exist.');
+                    return false;
+                }
             });
     };
 };
