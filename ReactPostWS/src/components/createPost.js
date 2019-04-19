@@ -78,6 +78,6 @@ class createPost extends Component {
             </div>
         );
     }
-};
+}
 
 export default createPost;
