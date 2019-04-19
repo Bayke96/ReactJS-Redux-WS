@@ -247,14 +247,6 @@ textarea {
         font-size: 0.8em;
     }
 
-    input[type="text"]{
-        font-size: 0.7em;
-    }
-
-    textarea {
-        font-size: 0.7em;
-    }
-
     .delete-post-paragraph {
         text-align: center;
         color: darkred;
@@ -277,12 +269,8 @@ textarea {
     .header-button {
         margin-left: 1em;
         margin-right: 1em;
-        font-size: 1.2em;
-        margin-top: 2em;
-    }
-
-    .header-button {
         font-size: 1em;
+        margin-top: 2em;
     }
 
     .form-buttons button {
