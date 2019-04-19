@@ -91,6 +91,6 @@ class readPost extends Component {
             </div>
         );
     }
-};
+}
 
 export default readPost;
